@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oogle Docs</title>
+        <meta name="description" content="Edit a document you may have on your PC!">
+        <link rel="stylesheet" href="docs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="menu-bar">
+            <button class="menu-button" style="margin-left: 5%; width: 10%; max-width: 200px; background-color: azure; padding: 10px;" onclick="location = 'index.html'"><i class="fa fa-quote-left"></i> Oogle Documents</button>
+            <div class="menu-button" id="title" contenteditable="true" style=" margin: 5px;margin-left: 10%; width: 80%; padding: 5px; background-color: rgb(142, 147, 147);">New Document</div>
+            <button class="menu-button" style="margin-left: 10%;" id="autosaveToggler" onclick="autosaveToggle();"><i class="fa fa-repeat"></i> Autosave</button>
+            <button class="menu-button" onclick="save();"><i class="fa fa-download"></i> Save</button>
+            <button class="menu-button" onclick="load();"><i class="fa fa-upload"></i> Load</button>
+            <button class="menu-button" onclick="unload();"><i class="fa fa-trash"></i> Delete</button>
+        </div>
+
+        <span id="document">
+            <textarea name="edietedHTML" id="edietedHTML" placeholder="Type out a documet" spellcheck="true" onkeyup="if (autosave == true) {save();}"></textarea>
+        </span>
+        
+        
+        
+        
+        <script src="doc.js"></script>
+    </body>
+</html>
