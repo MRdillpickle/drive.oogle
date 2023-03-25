@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oogle Drive</title>
+        <link rel="shortcut icon" href="icon.png" >
+        <meta name="description" content="this is a little drive system i made when i vas 13 years old,  this fetures 2 apps to view your content!">
+        <link rel="stylesheet" href="drive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+        <div id="menu">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-plus"></i> New</button>
+                <div class="dropdown-content">
+                     <a href="scripts.html">Oogle App</a>
+                     <a href="documents.html">Oogle Doc</a>
+                </div>
+            </div>
+            <div class="dropdown2">
+                <button class="dropbtn2"><i class="fa fa-user"></i> Account</button>
+                <div class="dropdown-content2">
+                     <a onclick="window.location = '';">Reload</a>
+                     <a href="https://mrdillpickle.github.io/Oogle/index.html">Oogle homepage</a>
+                </div>
+            </div>
+            <div class="preview-contaner">
+                <img id="fileImg" src="iconUNKNOWN.png" draggable="false" width="100">
+                <button onclick="openFile();" disabled="true" id="open"> <i class="fa fa-folder-open"></i> Open</button>
+                <ul>
+                    <li id="fileName">Name: </li>
+                    <li id="fileType">Type: </li><br>
+                </ul>
+            </div>
+            <footer id="footer">
+                By: Saatesh Janki
+            </footer>
+        </div>
+        <div id="app-files">
+        </div>
+
+        <script src="drive.js"></script>
+    </body>
+</html>

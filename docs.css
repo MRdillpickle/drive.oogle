@@ -1,0 +1,36 @@
+body{
+    background-color: #999;
+    overflow: hidden;
+}
+#fileInput{
+    visibility:hidden;
+}
+textarea{
+    color: #000000;
+    resize: none;
+    width: 90%;
+    min-width: 500px;
+    background-color: #ffffff;
+    border-color: #000000;
+    border-width: 1px;
+    height: 84%;
+    margin-left: 5%;
+    min-height: 400px;
+    position: fixed;
+    margin-top: -9px;
+    font-size: large;
+    transition-duration: 0.1s;
+}
+.menu-button {
+    background-color: whitesmoke;
+    color: black;
+}
+#menu-bar{
+    background-color: white;
+    width: 102%;
+    margin-left: -1%;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

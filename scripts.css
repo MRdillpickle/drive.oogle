@@ -1,0 +1,93 @@
+:root{
+    --background: #434368;
+}
+
+body{
+    background-color: var(--background);
+}
+#fileInput{
+    visibility: hidden;
+}
+#LeftCtrls{
+    float: left;
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    max-width: 1000px;
+    background-color: var(--background);
+    
+    padding-left: 0.5%;
+    margin-left: -1%;
+}
+
+#RightCtrls{
+    float: right;
+    background-color: var(--background);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    margin-left: 52%;
+}
+
+#run-button{
+    margin: 5px;
+    height: 40px;
+    width: 5%;
+    min-width: 100px;
+    color: white;
+    border-color: green;
+    border-radius: 10px;
+    border-style: ridge;
+    border-width: 5px;
+    background-color: green;
+    margin-right: 5%;
+    float: right;
+}
+
+.menu-button{
+    float: left;
+    margin: 10px;
+    width: 5%;
+    min-width: 100px;
+    color: white;
+    background-color: var(--background);
+    padding: 5px;
+}
+
+iframe{
+    background-color: white;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    width: 90%;
+    height: 50%;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+#menu-bar{
+    margin-top: -10px;
+    height: 50px;
+    width: 110%;
+    padding-left: 10%;
+    margin-left: -15%;
+    background-color: #444;
+}
+
+textarea{
+    color: aliceblue;
+    width: 90%;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+    height: 90%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 20px;
+}
