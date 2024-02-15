@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slides.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Oogle Smashboard</title>
+</head>
+<body>
+    <div class="print"id="notif" onclick="hideNotif();"></div>
+    <div id="banner">
+        <img src="iconPPT.png">
+        <br>
+        <progress></progress>
+    </div>
+    <div id="menu">
+        <input type="text" id="title" placeholder="Smashboard name (no period)">
+        <button id="save" onclick="save();" title="Save File"<i class="fa fa-download"></i></button>
+        <button id="text" onclick="add('text');" title="Insert Text"<i class="fa fa-i-cursor"></i></button>
+        <button id="img" onclick="add('img');" title="Insert Image"<i class="fa fa-image"></i></button>
+        <button id="edit" disabled="true" onclick="edit();" title="Edit"<i class="fa fa-pencil"></i></button>
+        <button id="read"  onclick="read();" title="Read Docs"<i class="fa fa-book"></i></button>
+        <button id="back" onclick="exit();" title="Go back"<i class="fa fa-caret-left"></i> Oogle Smashboard</button>
+    </div>
+    <div id="slide"></div>
+    <div id="editPopup">
+        <h1>Edit Object</h1>
+        <div id="edit-image">
+            <input id="imageUrl" placeholder="Enter New Image Url...">
+        </div>
+        <div id="edit-text">
+            <input type="color" id="textColour">
+            <input type="number" id="textSize" placeholder="Font - Size">
+        </div>
+        <button id="closeEdit" onclick="closeEdit();">Close</button>
+    </div>
+    <button id="addSlide" onclick="addSlide();"><i class="fa fa-plus"></i></button>
+    <div id="select"><div onclick="goto(0)" class="mini-slide">Slide 0</div></div>
+    <script src="slides.js" defer></script>
+    <div id="ctrl" title="ctrl + click = drag">Ctrl <br> <i class="fa fa-crosshairs"></i> <br> <i class="fa fa-arrow-left"></i></div>
+</body>
+</html>

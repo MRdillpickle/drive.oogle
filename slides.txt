@@ -1,0 +1,6 @@
+Oogle slides software documentation:
+
+From the topbar, you'll find: a title-bar, add-Text, add-Image, edit, read, and back options.
+The title-bar is used to name your file (period will corupt the file and can no longer be opend by oogle-drive).
+the add button add an element to your smashboard.
+the edit button is used when you select an element (click) and will find a modal asking you to edit the object accordingly

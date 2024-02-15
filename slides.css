@@ -1,0 +1,243 @@
+body{
+    background-color: rgb(227, 227, 227);
+}
+#slide{
+    box-shadow: black 0 5px 20px;
+    position: fixed;
+    top: 13%;
+    left: calc(50% - 500px);
+    background-color: white;
+    z-index: 5;
+    height: 500px;
+    width: 1000px;
+    border: 0 solid black;
+    border-radius: 5px;
+    cursor: grab;
+}
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    cursor: move;
+}
+#menu{
+    background-color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 8%;
+    min-height: 70px;
+}
+#select{
+    background-color: rgb(240, 240, 240);
+    width: 99%;
+    padding: 10px;
+    position: fixed;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: none;
+}
+#select div{
+    width: 500px;
+    height: 90%;
+    margin-top: 0.5%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: 5px double black;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-weight: 900;
+    font-size: 50px;
+}
+#addSlide{
+    position: fixed;
+    bottom: 21%;
+    left: 1%;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0 solid black;
+    background-color: white;
+    display: none;
+}
+#editPopup{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    background-color: #efefef;
+    z-index: 10;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-name: zoom;
+}
+#editPopup input{
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    margin: 10px;
+}
+
+#back:hover{
+    width: 150px;
+    background-color: #c3c3c3;
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow;
+}
+@keyframes load {
+    0%{
+        display: block;
+        top: 0;
+        transform: scale(1);
+    }
+    70%{
+        top: 0;
+    }
+    90%{
+        opacity: 1;
+        display: block;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        display: none;
+        transform: scale(2) translateY(150px);
+    }
+}
+#banner{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    animation-duration: 3s;
+    animation-name: load;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    display: block;
+}
+@keyframes zoom-in {
+    0% {
+        transform: rotateY(100deg) rotateX(-30deg) scale(0.5);
+        box-shadow: #c3c3c3 0 0 0px;
+    }
+    75%{
+        transform: scale(1.5);
+        box-shadow: #c3c3c3 0px 10px 100px;
+    }
+}
+#banner img{
+    margin-top: 10%;
+    height: 20%;
+    animation-duration: 1.5s;
+    animation-name: zoom-in;
+    animation-iteration-count: 1;
+    
+    background-color: white;
+}
+#editPopup button{
+    color: white;
+    background-color: red;
+    width: 50%;
+    height: 100px;
+    font-size: larger;
+    border: 0 solid black;
+    border-radius: 20px;
+}
+@keyframes zoom {
+    from{
+        transform: scale(0.1);
+    }
+}
+#menu button{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    border: 0 solid black;
+    margin-top: 2.5px;
+}
+#menu input{
+    margin-left: 10px;
+    height: 50px;
+    width: 20%;
+    font-size: larger;
+    border-radius: 10px;
+    border: 0 solid black;
+    border-left: 5px solid yellow;
+}
+#back{
+    float: right;
+    width: 100px;
+    transition-duration: 0.3s;
+    border-left: 0 solid yellow;
+    border-right: 0 solid yellow;
+}
+@keyframes notif {
+    from{
+        bottom: -11%;
+        background-color: black;
+        color: white;
+        transform: scale(0.5);
+    }
+}
+.print{
+    height: 10%;
+    width: 50%;
+    left: 25%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 0 solid black;
+    bottom: 5px;
+    z-index: 10;
+    position: fixed;
+    cursor:alias;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-name: notif;
+    animation-duration: 0.4s;
+    box-shadow: black 0px 5px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: visible;
+    text-align: center;
+    font-size: 250%;
+    opacity: 1;
+    transition-duration: 0.4s;
+    backdrop-filter: blur(100px);
+}
+#ctrl{
+    height: 50px;
+    width: 150px;
+    border: 0 solid black;
+    border-radius: 5px;
+    background-color: white;
+    bottom: 5px;
+    z-index: 9;
+    position: fixed;
+    cursor: none;
+    box-shadow: black 0 5px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    text-align: center;
+    font-size: 45px;
+    left: 10px;
+    transition-duration: 0.4s;
+}

@@ -1,0 +1,302 @@
+.file{
+    margin: 10px;
+    color: black;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 70px;
+    width: 10%;
+    font-size: medium;
+    transition-duration: 0.3s;
+    min-width: 200px;
+}
+
+.preview-contaner{
+  background-color: #ffffff00;
+  width: 80%;
+  text-align: left;
+  bottom: 30%;
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+  bottom:40px;
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: rgb(139, 139, 139) 15px 5px 5px;
+}
+
+#open {
+  float: right;
+  background-color: #797979;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  font-size: larger;
+  margin-top: 10px;
+  cursor: not-allowed;
+  transition-duration: 1;
+  text-decoration: dashed;
+}
+
+#advert{
+  display: none;
+  position: fixed;
+  width: 50%;
+  left: 40%;
+  margin-top: 1%;
+  height: 150px;
+  background-color: rgba(140, 140, 140, 0.902);
+  text-align: left;
+  overflow: hidden;
+}
+
+#advert #close{
+  position: absolute;
+  top: 10px;
+  height: 50px;
+  width: 50px;
+  right: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #5628286b;
+  border-style: double;
+  border-width: 5px;
+  border-color: #000000;
+}
+
+#text{
+  width: 50%;
+  margin-left: 23%;
+  color: #ddd;
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#downL {
+  float: right;
+  background-color: #4f4f4f;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  font-size: larger;
+  margin-top: -70px;
+  cursor: not-allowed;
+  transition-duration: 1;
+  text-decoration: dashed;
+}
+
+#open, #delete, #downL{
+  text-align: left;
+  padding-left: 20px;
+}
+
+#delete {
+  float: right;
+  background-color: #562828;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  font-size: larger;
+  margin-top: -23px;
+  cursor: not-allowed;
+  transition-duration: 1;
+}
+
+#open:hover{
+  color: whitesmoke;
+}
+
+.custom-cm{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  padding:0;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  order: 1;
+}
+.custom-cm__item {
+  cursor: pointer;
+  padding: 8px 15px;
+}
+.custom-cm__item:hover{
+  background-color: #d2d2d2;
+}
+
+.file:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+#app-files{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: groove;
+    height: 100%;
+    position: fixed;
+    width: 70%;
+    margin-left: 30%;
+    border-color: black;
+    overflow-y: scroll;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+  
+@keyframes slide-dropdown {
+    0%{transform: translateX(-100px); background-color: #ffffff00; color: #ffffff00;}
+    100%{transform: translateX(0px); background-color: #f1f1f1; color: #333;}
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 2%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropbtn2 {
+    background-color: #535353;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block; animation: slide-dropdown 0.3s ease-out;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  
+  
+  .dropdownBox {
+    top: 0;
+    opacity: 0;
+    right: -8%;
+    max-width: 13rem;
+    position: absolute;
+    transition: all 0.4s;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transform: translateX(-10px);
+  }
+  
+  .dropdown:hover .dropdownBox {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  #menu{
+    background-color: #d6d6d6;
+    padding: 10px;
+    float: left;
+    position:fixed;
+    height:100%;
+    width: 30%;
+    overflow-x: visible;
+    background-image: url(icon.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-y:95%;
+    background-position-x: 30%;
+  }
+
+/* Dropdown Button */
+  
+@keyframes slide-dropdown {
+    0%{transform: translateX(-100px); background-color: #ffffff00; color: #ffffff00;}
+    100%{transform: translateX(0px); background-color: #f1f1f1; color: #333;}
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown2 {
+    position: relative;
+    display: block;
+    float: right;
+    margin-right: 15%;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content2 a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown2:hover .dropdown-content2 {display: block; animation: slide-dropdown 0.3s ease-out;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown2:hover .dropbtn2 {background-color: #000000;}
